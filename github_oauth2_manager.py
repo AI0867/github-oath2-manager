@@ -29,7 +29,7 @@ def do_list():
     jsonresponse = do_request(URL)
     print "{0} keys".format(len(jsonresponse))
     for item in jsonresponse:
-        print "ID: {id}, Scopes: {scopes}, Note: {note}".format(**item)
+        print "ID: {id}, Scopes: {scopes}, Note: {note}, Note_url: {note_url}, Token: {token}".format(**item)
 
 def internal_show(dictionary):
     for key, val in dictionary:
